@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Libertas - Civic Engagement Platform</title>
-<meta name="description" content="Libertas makes local politics transparent. Post demands, vote on polls, and hold your representatives accountable.">
+<title>Libertas - Plattform fuer buergerliche Mitbestimmung</title>
+<meta name="description" content="Libertas macht lokale Politik transparent. Stelle Forderungen, stimme ab und mache Politik messbar.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,131 +13,93 @@
   <div class="nav-inner">
     <div class="nav-brand">
       <span class="brand-name">Libertas</span>
-      <span class="brand-sub">Cologne Neustadt-Sued</span>
+      <span class="brand-sub">Koeln Neustadt-Sued</span>
     </div>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <button class="hamburger" id="hamburger" aria-label="Menue umschalten">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#dashboard" class="nav-link active" data-section="dashboard">Dashboard</a></li>
-      <li><a href="#demands" class="nav-link" data-section="demands">Demands</a></li>
-      <li><a href="#polls" class="nav-link" data-section="polls">Polls</a></li>
-      <li><a href="#representation" class="nav-link" data-section="representation">Representation</a></li>
-      <li><a href="#politicians" class="nav-link" data-section="politicians">Politicians</a></li>
-      <li><a href="#accountability" class="nav-link" data-section="accountability">Accountability</a></li>
-      <li><a href="#profile" class="nav-link" data-section="profile">Profile</a></li>
+      <li><a href="#dashboard" class="nav-link active" data-section="dashboard">Uebersicht</a></li>
+      <li><a href="#demands" class="nav-link" data-section="demands">Forderungen</a></li>
+      <li><a href="#polls" class="nav-link" data-section="polls">Umfragen</a></li>
+      <li><a href="#representation" class="nav-link" data-section="representation">Repräsentativität</a></li>
+      <li><a href="#politicians" class="nav-link" data-section="politicians">Politik</a></li>
+      <li><a href="#accountability" class="nav-link" data-section="accountability">Umsetzung</a></li>
+      <li><a href="#profile" class="nav-link" data-section="profile">Profil</a></li>
     </ul>
   </div>
 </nav>
 
 <main id="app">
 
-  <!-- DASHBOARD -->
   <section id="dashboard" class="section active">
     <div class="section-header">
-      <h1>Welcome to <span class="text-primary">Libertas</span></h1>
-      <p class="subtitle">Your neighborhood transparency dashboard for Cologne Neustadt-Sued</p>
+      <h1>Willkommen bei <span class="text-primary">Libertas</span></h1>
+      <p class="subtitle">Deine Uebersicht fuer lokale Politik in Koeln Neustadt-Sued</p>
     </div>
+
     <div class="card-grid grid-4">
       <div class="card card-accent">
         <div class="card-icon">&#127963;</div>
-        <h3>Governing Parties</h3>
+        <h3>Regierende Parteien</h3>
         <div class="tag-list">
           <span class="badge badge-primary">CDU</span>
           <span class="badge badge-green">Gruene</span>
         </div>
-        <p class="card-meta">Coalition since 2020</p>
+        <p class="card-meta">Koalition seit 2020</p>
       </div>
+
       <div class="card card-accent">
         <div class="card-icon">&#128101;</div>
-        <h3>Local Representatives</h3>
+        <h3>Lokale Vertreter</h3>
         <p class="stat-number">12</p>
-        <p class="card-meta">District council members</p>
+        <p class="card-meta">Mitglieder im Stadtrat</p>
       </div>
+
       <div class="card card-accent">
         <div class="card-icon">&#128220;</div>
-        <h3>Recent Decisions</h3>
+        <h3>Aktuelle Beschluesse</h3>
         <p class="stat-number">8</p>
-        <p class="card-meta">In the last 30 days</p>
+        <p class="card-meta">In den letzten 30 Tagen</p>
       </div>
+
       <div class="card card-accent">
         <div class="card-icon">&#9993;</div>
-        <h3>Open Issues</h3>
+        <h3>Offene Themen</h3>
         <p class="stat-number">5</p>
-        <p class="card-meta">Awaiting public input</p>
+        <p class="card-meta">Warten auf Buergerbeteiligung</p>
       </div>
     </div>
 
     <div class="card-grid grid-2 mt-lg">
       <div class="card">
-        <h3>Recent Activity Feed</h3>
+        <h3>Aktuelle Entwicklungen</h3>
         <ul class="feed-list">
           <li class="feed-item">
             <span class="feed-dot feed-dot-blue"></span>
             <div>
-              <strong>New bike lane proposal approved</strong>
-              <p class="feed-meta">District Council - 2 days ago</p>
+              <strong>Neuer Radweg wurde beschlossen</strong>
+              <p class="feed-meta">Stadtrat - vor 2 Tagen</p>
             </div>
           </li>
           <li class="feed-item">
             <span class="feed-dot feed-dot-gold"></span>
             <div>
-              <strong>Public hearing on school renovation scheduled</strong>
-              <p class="feed-meta">Education Committee - 4 days ago</p>
-            </div>
-          </li>
-          <li class="feed-item">
-            <span class="feed-dot feed-dot-blue"></span>
-            <div>
-              <strong>Budget allocation for park maintenance released</strong>
-              <p class="feed-meta">Finance Committee - 1 week ago</p>
-            </div>
-          </li>
-          <li class="feed-item">
-            <span class="feed-dot feed-dot-gold"></span>
-            <div>
-              <strong>Traffic calming measures under review</strong>
-              <p class="feed-meta">Urban Planning - 1 week ago</p>
-            </div>
-          </li>
-          <li class="feed-item">
-            <span class="feed-dot feed-dot-blue"></span>
-            <div>
-              <strong>New playground funding approved</strong>
-              <p class="feed-meta">Youth Committee - 2 weeks ago</p>
+              <strong>Anhoerung zur Schulrenovierung geplant</strong>
+              <p class="feed-meta">Bildungsausschuss - vor 4 Tagen</p>
             </div>
           </li>
         </ul>
       </div>
+
       <div class="card">
-        <h3>Who Is Responsible?</h3>
+        <h3>Wer ist zustaendig?</h3>
         <div class="responsibility-list">
           <div class="resp-item">
             <div class="avatar">MK</div>
             <div>
               <strong>Maria Klein</strong>
-              <p class="feed-meta">District Mayor - CDU</p>
-            </div>
-          </div>
-          <div class="resp-item">
-            <div class="avatar avatar-green">TF</div>
-            <div>
-              <strong>Thomas Fischer</strong>
-              <p class="feed-meta">Deputy Mayor - Gruene</p>
-            </div>
-          </div>
-          <div class="resp-item">
-            <div class="avatar avatar-gold">SB</div>
-            <div>
-              <strong>Sarah Becker</strong>
-              <p class="feed-meta">Youth and Education Chair</p>
-            </div>
-          </div>
-          <div class="resp-item">
-            <div class="avatar">JW</div>
-            <div>
-              <strong>Jan Weber</strong>
-              <p class="feed-meta">Urban Planning Lead</p>
+              <p class="feed-meta">Bezirksbuergermeisterin - CDU</p>
             </div>
           </div>
         </div>
@@ -145,313 +107,90 @@
     </div>
   </section>
 
-  <!-- DEMANDS -->
   <section id="demands" class="section">
     <div class="section-header">
-      <h1>Demands and Discussions</h1>
-      <p class="subtitle">Post your ideas, demands, and discussion points for the neighborhood</p>
+      <h1>Forderungen und Diskussionen</h1>
+      <p class="subtitle">Teile deine Ideen und Anliegen fuer deinen Stadtteil</p>
     </div>
+
     <div class="card form-card">
-      <h3>Submit a New Demand</h3>
+      <h3>Neue Forderung erstellen</h3>
       <form id="demandForm">
         <div class="form-group">
-          <label for="demandTitle">Title</label>
-          <input type="text" id="demandTitle" placeholder="What do you want to change?" required>
+          <label for="demandTitle">Titel</label>
+          <input type="text" id="demandTitle" placeholder="Was soll sich aendern?" required>
         </div>
+
         <div class="form-group">
-          <label for="demandCategory">Category</label>
+          <label for="demandCategory">Kategorie</label>
           <select id="demandCategory">
-            <option value="Infrastructure">Infrastructure</option>
-            <option value="Environment">Environment</option>
-            <option value="Education">Education</option>
-            <option value="Safety">Safety</option>
-            <option value="Culture">Culture</option>
-            <option value="Transportation">Transportation</option>
-            <option value="Other">Other</option>
+            <option>Infrastruktur</option>
+            <option>Umwelt</option>
+            <option>Bildung</option>
+            <option>Sicherheit</option>
+            <option>Kultur</option>
+            <option>Verkehr</option>
+            <option>Sonstiges</option>
           </select>
         </div>
+
         <div class="form-group">
-          <label for="demandDesc">Description</label>
-          <textarea id="demandDesc" rows="3" placeholder="Describe your demand in detail..." required></textarea>
+          <label for="demandDesc">Beschreibung</label>
+          <textarea id="demandDesc" rows="3" placeholder="Beschreibe deine Forderung..." required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit Demand</button>
+
+        <button type="submit" class="btn btn-primary">Forderung erstellen</button>
       </form>
     </div>
 
     <div class="sort-bar mt-lg">
-      <span class="sort-label">Sort by:</span>
-      <button class="btn btn-sm btn-outline active" data-sort="recent" id="sortRecent">Most Recent</button>
-      <button class="btn btn-sm btn-outline" data-sort="supported" id="sortSupported">Most Supported</button>
+      <span class="sort-label">Sortieren nach:</span>
+      <button class="btn btn-sm btn-outline active">Neueste</button>
+      <button class="btn btn-sm btn-outline">Meist unterstuetzt</button>
     </div>
 
     <div id="demandsList" class="demand-list mt-md"></div>
   </section>
 
-  <!-- POLLS -->
   <section id="polls" class="section">
     <div class="section-header">
-      <h1>Polls</h1>
-      <p class="subtitle">Vote on issues that matter to your community</p>
+      <h1>Umfragen</h1>
+      <p class="subtitle">Stimme zu den wichtigsten Themen ab</p>
     </div>
+
     <div class="tab-bar">
-      <button class="tab-btn active" data-tab="community" id="tabCommunity">Community Polls</button>
-      <button class="tab-btn" data-tab="commissioned" id="tabCommissioned">Commissioned Polls</button>
+      <button class="tab-btn active">Community Umfragen</button>
+      <button class="tab-btn">Beauftragte Umfragen</button>
     </div>
+
     <div id="pollsList" class="poll-list mt-md"></div>
   </section>
 
-  <!-- REPRESENTATION -->
   <section id="representation" class="section">
     <div class="section-header">
-      <h1>Representation Score</h1>
-      <p class="subtitle">How well do poll participants reflect the neighborhood demographics?</p>
-    </div>
-    <div class="card card-accent score-card">
-      <div class="score-circle">
-        <span class="score-value">78</span>
-        <span class="score-label">/ 100</span>
-      </div>
-      <h3>Overall Representation Score</h3>
-      <p class="score-explanation">This score indicates how closely poll participants match the actual demographics of Cologne Neustadt-Sued. A higher score means more representative results.</p>
-    </div>
-    <div class="card-grid grid-2 mt-lg">
-      <div class="card">
-        <h3>Age Distribution</h3>
-        <div class="bar-comparison">
-          <div class="bar-row">
-            <span class="bar-label">18-29</span>
-            <div class="bar-track">
-              <div class="bar-fill bar-actual" style="width:35%"><span>35%</span></div>
-              <div class="bar-fill bar-reference" style="width:28%"><span>28%</span></div>
-            </div>
-          </div>
-          <div class="bar-row">
-            <span class="bar-label">30-44</span>
-            <div class="bar-track">
-              <div class="bar-fill bar-actual" style="width:30%"><span>30%</span></div>
-              <div class="bar-fill bar-reference" style="width:32%"><span>32%</span></div>
-            </div>
-          </div>
-          <div class="bar-row">
-            <span class="bar-label">45-59</span>
-            <div class="bar-track">
-              <div class="bar-fill bar-actual" style="width:20%"><span>20%</span></div>
-              <div class="bar-fill bar-reference" style="width:24%"><span>24%</span></div>
-            </div>
-          </div>
-          <div class="bar-row">
-            <span class="bar-label">60+</span>
-            <div class="bar-track">
-              <div class="bar-fill bar-actual" style="width:15%"><span>15%</span></div>
-              <div class="bar-fill bar-reference" style="width:16%"><span>16%</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="bar-legend mt-sm">
-          <span class="legend-item"><span class="legend-dot legend-actual"></span> Participants</span>
-          <span class="legend-item"><span class="legend-dot legend-reference"></span> Neighborhood</span>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Gender Distribution</h3>
-        <div class="bar-comparison">
-          <div class="bar-row">
-            <span class="bar-label">Female</span>
-            <div class="bar-track">
-              <div class="bar-fill bar-actual" style="width:48%"><span>48%</span></div>
-              <div class="bar-fill bar-reference" style="width:51%"><span>51%</span></div>
-            </div>
-          </div>
-          <div class="bar-row">
-            <span class="bar-label">Male</span>
-            <div class="bar-track">
-              <div class="bar-fill bar-actual" style="width:46%"><span>46%</span></div>
-              <div class="bar-fill bar-reference" style="width:47%"><span>47%</span></div>
-            </div>
-          </div>
-          <div class="bar-row">
-            <span class="bar-label">Non-binary</span>
-            <div class="bar-track">
-              <div class="bar-fill bar-actual" style="width:6%"><span>6%</span></div>
-              <div class="bar-fill bar-reference" style="width:2%"><span>2%</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="bar-legend mt-sm">
-          <span class="legend-item"><span class="legend-dot legend-actual"></span> Participants</span>
-          <span class="legend-item"><span class="legend-dot legend-reference"></span> Neighborhood</span>
-        </div>
-      </div>
+      <h1>Repräsentativitaets-Score</h1>
+      <p class="subtitle">Wie gut spiegeln die Teilnehmer den Stadtteil wider?</p>
     </div>
   </section>
 
-  <!-- POLITICIANS -->
   <section id="politicians" class="section">
     <div class="section-header">
-      <h1>Parties and Politicians</h1>
-      <p class="subtitle">Get to know the people representing your district</p>
-    </div>
-    <h2 class="mt-md">Active Parties</h2>
-    <div class="card-grid grid-3 mt-sm">
-      <div class="card card-party">
-        <span class="badge badge-primary">CDU</span>
-        <h3>Christian Democratic Union</h3>
-        <p>Focus areas: economic stability, infrastructure, family policy</p>
-        <p class="card-meta">5 seats in district council</p>
-      </div>
-      <div class="card card-party">
-        <span class="badge badge-green">Gruene</span>
-        <h3>Alliance 90 / The Greens</h3>
-        <p>Focus areas: climate action, mobility, green spaces</p>
-        <p class="card-meta">4 seats in district council</p>
-      </div>
-      <div class="card card-party">
-        <span class="badge badge-red">SPD</span>
-        <h3>Social Democratic Party</h3>
-        <p>Focus areas: social equity, housing, education</p>
-        <p class="card-meta">3 seats in district council</p>
-      </div>
-    </div>
-
-    <h2 class="mt-lg">Politician Profiles</h2>
-    <div class="card-grid grid-2 mt-sm">
-      <div class="card politician-card">
-        <div class="politician-header">
-          <div class="avatar avatar-lg">MK</div>
-          <div>
-            <h3>Maria Klein</h3>
-            <p class="card-meta">District Mayor - CDU</p>
-          </div>
-        </div>
-        <p class="bio">Experienced local politician with 12 years of service in district politics. Advocates for safe neighborhoods and improved infrastructure.</p>
-        <div class="politician-details">
-          <div class="detail-block">
-            <h4>Current Focus</h4>
-            <p>School modernization program and traffic safety near residential areas.</p>
-          </div>
-          <div class="detail-block">
-            <h4>Open Question to Citizens</h4>
-            <p>"Which intersections in Neustadt-Sued do you consider the most dangerous for pedestrians?"</p>
-          </div>
-          <div class="detail-block">
-            <h4>Recent Statement</h4>
-            <p>"We must invest in our schools now to prepare the next generation for the future."</p>
-          </div>
-        </div>
-        <div class="tag-list mt-sm">
-          <span class="badge">Infrastructure</span>
-          <span class="badge">Education</span>
-          <span class="badge">Safety</span>
-        </div>
-        <button class="btn btn-outline mt-sm">Follow</button>
-      </div>
-      <div class="card politician-card">
-        <div class="politician-header">
-          <div class="avatar avatar-lg avatar-green">TF</div>
-          <div>
-            <h3>Thomas Fischer</h3>
-            <p class="card-meta">Deputy Mayor - Gruene</p>
-          </div>
-        </div>
-        <p class="bio">Environmental scientist turned politician. Champions green mobility and sustainable urban development.</p>
-        <div class="politician-details">
-          <div class="detail-block">
-            <h4>Current Focus</h4>
-            <p>Expanding bike lane network and reducing car traffic in residential zones.</p>
-          </div>
-          <div class="detail-block">
-            <h4>Open Question to Citizens</h4>
-            <p>"What green spaces would you like to see improved or created in our district?"</p>
-          </div>
-          <div class="detail-block">
-            <h4>Recent Statement</h4>
-            <p>"Climate action starts at the neighborhood level. Every street counts."</p>
-          </div>
-        </div>
-        <div class="tag-list mt-sm">
-          <span class="badge">Environment</span>
-          <span class="badge">Transportation</span>
-        </div>
-        <button class="btn btn-outline mt-sm">Follow</button>
-      </div>
-    </div>
-
-    <div class="card card-qr mt-lg">
-      <div class="card-icon">&#128247;</div>
-      <h3>QR Code Integration (Coming Soon)</h3>
-      <p>Scan QR codes on campaign posters to instantly view the politician's profile, priorities, and track record right here on Libertas.</p>
+      <h1>Parteien und Politiker</h1>
+      <p class="subtitle">Lerne die Vertreter deines Stadtteils kennen</p>
     </div>
   </section>
 
-  <!-- ACCOUNTABILITY -->
   <section id="accountability" class="section">
     <div class="section-header">
-      <h1>Accountability Tracker</h1>
-      <p class="subtitle">Track whether citizen priorities are being addressed by local politics</p>
-    </div>
-    <div class="card card-accent summary-card">
-      <h3>Citizen Priority Response Rate</h3>
-      <div class="response-rate">
-        <span class="rate-value">64%</span>
-        <span class="rate-label">of top citizen priorities received a political response</span>
-      </div>
-    </div>
-    <div class="tracker-list mt-lg" id="trackerList">
-      <!-- Rendered by JS -->
+      <h1>Umsetzungs-Tracker</h1>
+      <p class="subtitle">Verfolge, ob Forderungen umgesetzt werden</p>
     </div>
   </section>
 
-  <!-- PROFILE -->
   <section id="profile" class="section">
     <div class="section-header">
-      <h1>Your Profile</h1>
-      <p class="subtitle">Manage your participation and demographic information</p>
-    </div>
-    <div class="card-grid grid-2">
-      <div class="card">
-        <h3>Profile Information</h3>
-        <form id="profileForm">
-          <div class="form-group">
-            <label for="profileName">Display Name</label>
-            <input type="text" id="profileName" placeholder="Your name">
-          </div>
-          <div class="form-group">
-            <label for="profileAge">Age Group</label>
-            <select id="profileAge">
-              <option value="18-29">18-29</option>
-              <option value="30-44">30-44</option>
-              <option value="45-59">45-59</option>
-              <option value="60+">60+</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="profileGender">Gender</label>
-            <select id="profileGender">
-              <option value="Female">Female</option>
-              <option value="Male">Male</option>
-              <option value="Non-binary">Non-binary</option>
-              <option value="Prefer not to say">Prefer not to say</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="profileDistrict">District</label>
-            <input type="text" id="profileDistrict" value="Neustadt-Sued" placeholder="Your district">
-          </div>
-          <button type="submit" class="btn btn-primary">Save Profile</button>
-        </form>
-        <p class="privacy-note mt-sm">Your comments are publicly anonymized. Demographic data is used only in aggregate to improve representativeness of polls.</p>
-      </div>
-      <div class="card">
-        <h3>Your Engagement</h3>
-        <div id="profileStats" class="profile-stats">
-          <!-- Rendered by JS -->
-        </div>
-        <div class="card card-qr mt-md">
-          <div class="card-icon">&#128241;</div>
-          <h3>QR Scanner (Coming Soon)</h3>
-          <p>Scan QR codes from events, posters, and official documents to quickly access relevant Libertas content.</p>
-        </div>
-      </div>
+      <h1>Dein Profil</h1>
+      <p class="subtitle">Verwalte deine Angaben</p>
     </div>
   </section>
 
