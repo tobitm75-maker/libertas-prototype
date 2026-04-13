@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Libertas - Bürgerplattform Köln Neustadt-Süd</title>
+  <meta name="description" content="Libertas - Bürgerbeteiligung und Transparenz für deinen Stadtteil" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <div class="nav-brand">Libertas</div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menue oeffnen">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#dashboard" class="nav-link active" data-section="dashboard">Dashboard</a></li>
+        <li><a href="#demands" class="nav-link" data-section="demands">Forderungen</a></li>
+        <li><a href="#polls" class="nav-link" data-section="polls">Abstimmungen</a></li>
+        <li><a href="#representation" class="nav-link" data-section="representation">Repraesentation</a></li>
+        <li><a href="#politicians" class="nav-link" data-section="politicians">Parteien & Politik</a></li>
+        <li><a href="#tracker" class="nav-link" data-section="tracker">Umsetzung</a></li>
+        <li><a href="#profile" class="nav-link" data-section="profile">Profil</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="app-main">
+
+    <!-- ==================== DASHBOARD ==================== -->
+    <section id="dashboard" class="app-section active">
+      <div class="section-header">
+        <h1>Libertas</h1>
+        <p class="subtitle">Bürgerbeteiligung für Köln Neustadt-Süd</p>
+      </div>
+
+      <div class="card-grid overview-grid">
+        <div class="card">
+          <div class="card-icon">&#127963;</div>
+          <h3>Regierende Parteien</h3>
+          <p>CDU, Grüne, SPD im Bezirksrat Innenstadt</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128101;</div>
+          <h3>Lokale Vertretung</h3>
+          <p>12 Bezirksvertreter*innen aktiv</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128220;</div>
+          <h3>Aktuelle Beschlüsse</h3>
+          <p>3 neue Beschlüsse diese Woche</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128499;</div>
+          <h3>Anstehende Themen</h3>
+          <p>2 öffentliche Anhörungen geplant</p>
+        </div>
+      </div>
+
+      <div class="card-grid two-col">
+        <div class="card feed-card">
+          <h3>Aktuelle politische Themen</h3>
+          <ul class="feed-list">
+            <li>
+              <span class="feed-date">12. Apr 2026</span>
+              <span class="feed-text">Bezirksrat genehmigt neues Radwegekonzept für die Bonner Straße</span>
+            </li>
+            <li>
+              <span class="feed-date">10. Apr 2026</span>
+              <span class="feed-text">Öffentliche Anhörung zur Umgestaltung des Chlodwigplatzes angekuendigt</span>
+            </li>
+            <li>
+              <span class="feed-date">08. Apr 2026</span>
+              <span class="feed-text">Diskussion ueber laengere Öffnungszeiten der Bürgerämter</span>
+            </li>
+            <li>
+              <span class="feed-date">05. Apr 2026</span>
+              <span class="feed-text">Förderantrag für Jugendprogramme im Volksgarten eingereicht</span>
+            </li>
+            <li>
+              <span class="feed-date">02. Apr 2026</span>
+              <span class="feed-text">Neue Lärmschutzverordnung für Gastronomiebetriebe vorgestellt</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card responsibility-card">
+          <h3>Wer ist zuständig?</h3>
+          <ul class="responsibility-list">
+            <li>
+              <strong>Dr. Maria Schneider</strong>
+              <span class="role-badge">Bezirksbürgermeisterin</span>
+            </li>
+            <li>
+              <strong>Thomas Weber</strong>
+              <span class="role-badge">Vorsitzender Bezirksrat</span>
+            </li>
+            <li>
+              <strong>Fatima El-Amin</strong>
+              <span class="role-badge">Jugendbeauftragte</span>
+            </li>
+            <li>
+              <strong>Klaus Hartmann</strong>
+              <span class="role-badge">Verkehrsbeauftragter</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FORDERUNGEN ==================== -->
+    <section id="demands" class="app-section">
+      <div class="section-header">
+        <h2>Forderungen & Diskussion</h2>
+        <p class="subtitle">Teile deine Anliegen und Ideen für den Stadtteil</p>
+      </div>
+
+      <div class="card form-card">
+        <h3>Neue Forderung einreichen</h3>
+        <form id="demand-form">
+          <div class="form-group">
+            <label for="demand-title">Titel</label>
+            <input type="text" id="demand-title" placeholder="Was ist dein Anliegen?" required />
+          </div>
+          <div class="form-group">
+            <label for="demand-category">Kategorie</label>
+            <select id="demand-category">
+              <option value="Verkehr">Verkehr</option>
+              <option value="Umwelt">Umwelt</option>
+              <option value="Bildung">Bildung</option>
+              <option value="Sicherheit">Sicherheit</option>
+              <option value="Kultur">Kultur</option>
+              <option value="Soziales">Soziales</option>
+              <option value="Sonstiges">Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="demand-description">Beschreibung</label>
+            <textarea id="demand-description" rows="3" placeholder="Beschreibe dein Anliegen genauer..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Forderung einreichen</button>
+        </form>
+      </div>
+
+      <div class="sort-bar">
+        <span>Sortierung:</span>
+        <button class="btn btn-sm sort-btn active" data-sort="recent">Neueste</button>
+        <button class="btn btn-sm sort-btn" data-sort="supported">Meiste Unterstützung</button>
+      </div>
+
+      <div id="demands-list" class="card-list">
+        <!-- Dynamisch generiert -->
+      </div>
+    </section>
+
+    <!-- ==================== ABSTIMMUNGEN ==================== -->
+    <section id="polls" class="app-section">
+      <div class="section-header">
+        <h2>Abstimmungen</h2>
+        <p class="subtitle">Stimme ab und gestalte deinen Stadtteil mit</p>
+      </div>
+
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="community">Bürgerabstimmungen</button>
+        <button class="tab-btn" data-tab="commissioned">Auftragsumfragen</button>
+      </div>
+
+      <div id="polls-community" class="tab-content active">
+        <div id="community-polls-list" class="card-list">
+          <!-- Dynamisch generiert -->
+        </div>
+      </div>
+
+      <div id="polls-commissioned" class="tab-content">
+        <div id="commissioned-polls-list" class="card-list">
+          <!-- Dynamisch generiert -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== REPRAESENTATION ==================== -->
+    <section id="representation" class="app-section">
+      <div class="section-header">
+        <h2>Repräsentations-Score</h2>
+        <p class="subtitle">Wie gut spiegeln die Abstimmenden die Bevölkerung wider?</p>
+      </div>
+
+      <div class="card score-card">
+        <div class="score-circle" id="rep-score-circle">
+          <span class="score-value" id="rep-score-value">78</span>
+          <span class="score-label">von 100</span>
+        </div>
+        <p class="score-explanation">
+          Der Repräsentations-Score zeigt, wie gut die demografische Zusammensetzung
+          der Abstimmungsteilnehmer die tatsächliche Bevölkerung von Köln Neustadt-Süd
+          widerspiegelt. Ein höherer Wert bedeutet repräsentativere Ergebnisse.
+        </p>
+      </div>
+
+      <div class="card-grid two-col">
+        <div class="card">
+          <h3>Altersverteilung</h3>
+          <div id="age-bars" class="comparison-bars">
+            <!-- Dynamisch generiert -->
+          </div>
+        </div>
+        <div class="card">
+          <h3>Geschlechterverteilung</h3>
+          <div id="gender-bars" class="comparison-bars">
+            <!-- Dynamisch generiert -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PARTEIEN & POLITIK ==================== -->
+    <section id="politicians" class="app-section">
+      <div class="section-header">
+        <h2>Parteien & Politiker*innen</h2>
+        <p class="subtitle">Erfahre mehr ueber die politischen Akteure in deinem Stadtteil</p>
+      </div>
+
+      <div class="card-grid three-col" id="parties-list">
+        <!-- Dynamisch generiert -->
+      </div>
+
+      <h3 class="sub-section-title">Politiker*innen-Profile</h3>
+      <div class="card-grid two-col" id="politicians-list">
+        <!-- Dynamisch generiert -->
+      </div>
+
+      <div class="card qr-card">
+        <div class="card-icon">&#128247;</div>
+        <h3>QR-Code auf Wahlplakaten</h3>
+        <p>
+          Bald können QR-Codes auf Wahlplakaten direkt zu den Profilen
+          der Kandidat*innen führen. Scanne den Code und erfahre sofort,
+          wofür sie stehen.
+        </p>
+        <span class="badge badge-gold">Demnachst verfuegbar</span>
+      </div>
+    </section>
+
+    <!-- ==================== UMSETZUNGSTRACKER ==================== -->
+    <section id="tracker" class="app-section">
+      <div class="section-header">
+        <h2>Umsetzungs-Tracker</h2>
+        <p class="subtitle">Werden Bürgeranliegen von der Politik aufgegriffen?</p>
+      </div>
+
+      <div class="card summary-metric-card">
+        <h3>Reaktionsquote auf Bürgeranliegen</h3>
+        <div class="metric-value" id="response-rate">64%</div>
+        <p class="metric-desc">der priorisierten Bürgeranliegen wurden von der Politik aufgegriffen</p>
+      </div>
+
+      <div id="tracker-list" class="card-list">
+        <!-- Dynamisch generiert -->
+      </div>
+    </section>
+
+    <!-- ==================== PROFIL ==================== -->
+    <section id="profile" class="app-section">
+      <div class="section-header">
+        <h2>Mein Profil</h2>
+        <p class="subtitle">Verwalte deine Daten und Beteiligung</p>
+      </div>
+
+      <div class="card-grid two-col">
+        <div class="card profile-card">
+          <h3>Persönliche Daten</h3>
+          <form id="profile-form">
+            <div class="form-group">
+              <label for="profile-name">Name</label>
+              <input type="text" id="profile-name" placeholder="Dein Name" />
+            </div>
+            <div class="form-group">
+              <label for="profile-district">Stadtteil</label>
+              <input type="text" id="profile-district" value="Köln Neustadt-Süd" />
+            </div>
+            <div class="form-group">
+              <label for="profile-age">Altersgruppe</label>
+              <select id="profile-age">
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35-44">35-44</option>
+                <option value="45-54">45-54</option>
+                <option value="55-64">55-64</option>
+                <option value="65+">65+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="profile-gender">Geschlecht</label>
+              <select id="profile-gender">
+                <option value="männlich">Männlich</option>
+                <option value="weiblich">Weiblich</option>
+                <option value="divers">Divers</option>
+                <option value="keine-angabe">Keine Angabe</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Profil speichern</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>Beteiligung</h3>
+          <div class="participation-stats" id="participation-stats">
+            <!-- Dynamisch generiert -->
+          </div>
+          <div class="privacy-note">
+            <strong>Hinweis zum Datenschutz:</strong> Deine Kommentare werden öffentlich
+            anonymisiert angezeigt. Demografische Daten werden ausschliesslich zur
+            Berechnung des Repräsentations-Scores verwendet und nie öffentlich
+            angezeigt.
+          </div>
+          <div class="card qr-card" style="margin-top: 1rem;">
+            <div class="card-icon">&#128241;</div>
+            <h3>QR-Scanner</h3>
+            <p>Bald kannst du QR-Codes auf Wahlplakaten scannen, um direkt zu den Profilen zu gelangen.</p>
+            <span class="badge badge-gold">Demnachst verfuegbar</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="app-footer">
+    <p>&copy; 2026 Libertas. Bürgerbeteiligung für deinen Stadtteil.</p>
+  </footer>
+
+  <!-- Bottom Navigation (Mobile) -->
+  <nav id="bottom-nav">
+    <button class="bottom-nav-item active" data-section="dashboard">
+      <span class="bottom-nav-icon">&#127963;</span>
+      <span class="bottom-nav-label">Home</span>
+    </button>
+    <button class="bottom-nav-item" data-section="demands">
+      <span class="bottom-nav-icon">&#128220;</span>
+      <span class="bottom-nav-label">Forderungen</span>
+    </button>
+    <button class="bottom-nav-item" data-section="polls">
+      <span class="bottom-nav-icon">&#128499;</span>
+      <span class="bottom-nav-label">Abstimmungen</span>
+    </button>
+    <button class="bottom-nav-item" data-section="politicians">
+      <span class="bottom-nav-icon">&#128101;</span>
+      <span class="bottom-nav-label">Politik</span>
+    </button>
+    <button class="bottom-nav-item" data-section="profile">
+      <span class="bottom-nav-icon">&#128100;</span>
+      <span class="bottom-nav-label">Profil</span>
+    </button>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
